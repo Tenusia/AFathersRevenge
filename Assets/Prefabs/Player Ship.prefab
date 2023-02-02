@@ -1558,6 +1558,11 @@ MonoBehaviour:
   moveSpeedX: 20
   moveSpeedY: 15
   xRange: 10
+  yRange: 7.5
+  positionPitchFactor: -3
+  controlPitchFactor: -12
+  positionYawFactor: 3
+  controlRollFactor: -15
   yIsInverted: 0
 --- !u!1 &9070274536578296191
 GameObject:

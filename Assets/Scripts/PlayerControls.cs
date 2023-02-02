@@ -11,10 +11,10 @@ public class PlayerControls : MonoBehaviour
     [SerializeField] float yRange = 7.5f;
     //[SerializeField] float yRangeAdjust = 2f; -- adjust Range dynamically instead of via camera
 
-    [SerializeField] float positionPitchFactor = -2f;
-    [SerializeField] float controlPitchFactor = -10f;
-    [SerializeField] float positionYawFactor = 2f;
-    [SerializeField] float controlRollFactor = 10f;
+    [SerializeField] float positionPitchFactor = -3f;
+    [SerializeField] float controlPitchFactor = -12f;
+    [SerializeField] float positionYawFactor = 3f;
+    [SerializeField] float controlRollFactor = 15f;
 
     [SerializeField] bool yIsInverted = false;
     float xThrow;
