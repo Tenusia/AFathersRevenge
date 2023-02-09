@@ -3,7 +3,12 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Enemy
+  - Bridge
+  - Terrain
+  - Pickup
+  - SpawnAtRuntime
   layers:
   - Default
   - TransparentFX
