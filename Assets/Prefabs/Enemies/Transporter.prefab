@@ -420,6 +420,7 @@ GameObject:
   - component: {fileID: 6536417412427714584}
   - component: {fileID: 6529438250348599954}
   - component: {fileID: 4793218925566950191}
+  - component: {fileID: -8524734958585161612}
   m_Layer: 0
   m_Name: Transporter
   m_TagString: Enemy
@@ -505,10 +506,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e2e41c1314370428e4c04632ec1f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 6060921902485569171, guid: 7b28b5d1796868c4f9d18de7e78c9725, type: 3}
-  hitVFX: {fileID: 6060921902485569171, guid: 275ffe2a723913e4fafef1df41089f75, type: 3}
+  deathFX: {fileID: 6060921902485569171, guid: 7b28b5d1796868c4f9d18de7e78c9725, type: 3}
+  hitFX: {fileID: 6060921902485569171, guid: 275ffe2a723913e4fafef1df41089f75, type: 3}
   scoreAmount: 500
   hitPoints: 6
+--- !u!65 &-8524734958585161612
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6542126197162830924}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 11.926746, y: 5.14402, z: 13.02625}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &6873048647850603500
 GameObject:
   m_ObjectHideFlags: 0

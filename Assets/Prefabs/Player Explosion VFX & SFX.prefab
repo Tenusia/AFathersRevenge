@@ -11,9 +11,8 @@ GameObject:
   - component: {fileID: 6060921902485569174}
   - component: {fileID: 6060921902485569173}
   - component: {fileID: 6060921902485569172}
-  - component: {fileID: 3317568070799807766}
   m_Layer: 0
-  m_Name: Enemy Hit VFX
+  m_Name: Player Explosion VFX & SFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42,7 +41,7 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6060921902485569171}
   serializedVersion: 8
-  lengthInSec: 0.2
+  lengthInSec: 0.7
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
@@ -51,7 +50,7 @@ ParticleSystem:
   emitterVelocityMode: 1
   looping: 0
   prewarm: 0
-  playOnAwake: 1
+  playOnAwake: 0
   useUnscaledTime: 0
   autoRandomSeed: 1
   startDelay:
@@ -117,8 +116,8 @@ ParticleSystem:
     startLifetime:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 0.2
-      minScalar: 0.1
+      scalar: 0.3
+      minScalar: 0.2
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -170,8 +169,8 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 3
-      scalar: 5
-      minScalar: 1
+      scalar: 50
+      minScalar: 5
       maxCurve:
         serializedVersion: 2
         m_Curve:
@@ -227,22 +226,22 @@ ParticleSystem:
       maxColor: {r: 0.764151, g: 0.1549929, b: 0.1549929, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.16037738, g: 0.008321469, b: 0.08202641, a: 1}
-        key1: {r: 0.7075472, g: 0.45723566, b: 0.5323292, a: 0.827451}
-        key2: {r: 1, g: 1, b: 1, a: 0}
-        key3: {r: 1, g: 1, b: 1, a: 0}
-        key4: {r: 1, g: 1, b: 1, a: 0}
-        key5: {r: 1, g: 1, b: 1, a: 0}
+        key0: {r: 1, g: 0.9800461, b: 0, a: 1}
+        key1: {r: 0.8039216, g: 0.42447758, b: 0, a: 0.827451}
+        key2: {r: 0.6039216, g: 0.1792569, b: 0, a: 0}
+        key3: {r: 0.5377358, g: 0.029600138, b: 0, a: 0}
+        key4: {r: 0.3882353, g: 0, b: 0.07978092, a: 0}
+        key5: {r: 0.23584908, g: 0, b: 0.07074521, a: 0}
         key6: {r: 0, g: 0, b: 0, a: 0}
         key7: {r: 0, g: 0, b: 0, a: 0}
         ctime0: 0
-        ctime1: 46838
-        ctime2: 65535
-        ctime3: 65535
-        ctime4: 65535
-        ctime5: 65535
+        ctime1: 3084
+        ctime2: 13685
+        ctime3: 28720
+        ctime4: 39514
+        ctime5: 60524
         ctime6: 65535
-        ctime7: 65535
+        ctime7: 0
         atime0: 0
         atime1: 63415
         atime2: 0
@@ -252,7 +251,7 @@ ParticleSystem:
         atime6: 0
         atime7: 0
         m_Mode: 0
-        m_NumColorKeys: 2
+        m_NumColorKeys: 7
         m_NumAlphaKeys: 2
       minGradient:
         serializedVersion: 2
@@ -286,7 +285,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.5
+      scalar: 1
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -868,7 +867,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 800
+      scalar: 1000
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -4003,8 +4002,8 @@ ParticleSystem:
       maxColor: {r: 1, g: 0.75332725, b: 0, a: 1}
       maxGradient:
         serializedVersion: 2
-        key0: {r: 0.8490566, g: 0.3244037, b: 0.3244037, a: 1}
-        key1: {r: 0.5566038, g: 0, b: 0.27249527, a: 1}
+        key0: {r: 1, g: 1, b: 1, a: 1}
+        key1: {r: 1, g: 0.74686915, b: 0, a: 1}
         key2: {r: 0, g: 0, b: 0, a: 0}
         key3: {r: 0, g: 0, b: 0, a: 0}
         key4: {r: 0, g: 0, b: 0, a: 0}
@@ -4762,8 +4761,8 @@ ParticleSystemRenderer:
   m_RenderingLayerMask: 257
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 38d132402e2f0114a97eb5800741bc4c, type: 2}
-  - {fileID: 2100000, guid: 38d132402e2f0114a97eb5800741bc4c, type: 2}
+  - {fileID: 2100000, guid: 18a56afd0f6a5c8418ae3e8851df9325, type: 2}
+  - {fileID: 2100000, guid: 2ee365f7bb02bd34e92396f1b3507d28, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -4814,16 +4813,3 @@ ParticleSystemRenderer:
   m_MeshWeighting2: 1
   m_MeshWeighting3: 1
   m_MaskInteraction: 0
---- !u!114 &3317568070799807766
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6060921902485569171}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01bf8dc04190dff49b50e453ef33a43d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  timeTillDestroy: 3

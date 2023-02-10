@@ -330,6 +330,7 @@ GameObject:
   - component: {fileID: 955650501631118743}
   - component: {fileID: 3073654349448444253}
   - component: {fileID: 6776439329214893474}
+  - component: {fileID: 7661648358352924348}
   m_Layer: 0
   m_Name: Bomber
   m_TagString: Enemy
@@ -415,10 +416,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e2e41c1314370428e4c04632ec1f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 6060921902485569171, guid: 7b28b5d1796868c4f9d18de7e78c9725, type: 3}
-  hitVFX: {fileID: 6060921902485569171, guid: 275ffe2a723913e4fafef1df41089f75, type: 3}
+  deathFX: {fileID: 6060921902485569171, guid: 7b28b5d1796868c4f9d18de7e78c9725, type: 3}
+  hitFX: {fileID: 6060921902485569171, guid: 275ffe2a723913e4fafef1df41089f75, type: 3}
   scoreAmount: 200
   hitPoints: 4
+--- !u!65 &7661648358352924348
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3577876982426949768}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 8.85927, y: 2.496461, z: 10.716055}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &4363730336807845012
 GameObject:
   m_ObjectHideFlags: 0

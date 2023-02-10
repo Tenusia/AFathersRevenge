@@ -23,6 +23,7 @@ public class PlayerControls : MonoBehaviour
     
     [Header("Lasers Array:")]
     [SerializeField] GameObject[] lasers;
+    [SerializeField] AudioClip laser;
 
     float xThrow;
     float yThrow;
@@ -30,7 +31,7 @@ public class PlayerControls : MonoBehaviour
 
     void Start()
     {
-  
+        
     }
 
     void Update()

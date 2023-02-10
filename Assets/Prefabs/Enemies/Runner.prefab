@@ -237,6 +237,7 @@ GameObject:
   - component: {fileID: 1401003145426238078}
   - component: {fileID: 1392897073091893322}
   - component: {fileID: 4007987715340847003}
+  - component: {fileID: 7156242936852310707}
   m_Layer: 0
   m_Name: Runner
   m_TagString: Enemy
@@ -322,11 +323,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14e2e41c1314370428e4c04632ec1f05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathVFX: {fileID: 6060921902485569171, guid: 7b28b5d1796868c4f9d18de7e78c9725, type: 3}
-  hitVFX: {fileID: 6060921902485569171, guid: 275ffe2a723913e4fafef1df41089f75, type: 3}
-  parent: {fileID: 0}
+  deathFX: {fileID: 6060921902485569171, guid: 7b28b5d1796868c4f9d18de7e78c9725, type: 3}
+  hitFX: {fileID: 6060921902485569171, guid: 275ffe2a723913e4fafef1df41089f75, type: 3}
   scoreAmount: 100
   hitPoints: 4
+--- !u!65 &7156242936852310707
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1369723382350566174}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.865558, y: 4.2419853, z: 11.309124}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &1713711772460697192
 GameObject:
   m_ObjectHideFlags: 0
